@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xqmsg esm test</title>
+    <link rel="stylesheet" href="../lib/css/xqmsg.css">
+</head>
+
+<body>
+    <h3>xqmsg esm test</h3>
+    <h4>1. 气泡组件</h4>
+    <p>
+        <button class="popBtn" data-type="1" data-text="操作成功">操作成功</button>
+        <button class="popBtn" data-type="2" data-text="操作失败">操作失败</button>
+        <button class="popBtn" data-type="3" data-text="操作警告">操作警告</button>
+        <button class="popBtn" data-type="4" data-text="操作信息">操作信息</button>
+    </p>
+    <h4>2.消息组件</h4>
+    <p>
+        <button class="msgBtn" data-type="0" data-text="我是顶部消息">顶部消息</button>
+        <button class="msgBtn" data-type="1" data-text="我是中部消息">中部消息</button>
+        <button class="msgBtn" data-type="2" data-text="我是底部消息">底部消息</button>
+    </p>
+    <h4>3.弹出框组件</h4>
+    <p>
+        <button class="confirmBtn">弹出框组件</button>
+    </p>
+
+    <script type="module">
+        import xqmsg from '../lib/js/xqmsg-esm.js';
+        // 1. 气泡组件
+        let popBtn = document.querySelectorAll('.popBtn');
+        for (let i = 0; i < popBtn.length; i++) {
+            const item = popBtn[i];
+            item.addEventListener('click', popSet, false);
+        }
+
+        function popSet (event) {
+            let e = event || window.event;
+            let params = e.target.dataset;
+            xqmsg.pop(params.text, params.type);
+        }
+
+        // 2.消息组件
+        let msgBtn = document.querySelectorAll('.msgBtn');
+        for (let i = 0; i < msgBtn.length; i++) {
+            const item = msgBtn[i];
+            item.addEventListener('click', msgSet, false);
+        }
+
+        function msgSet (event) {
+            let e = event || window.event;
+            let params = e.target.dataset;
+            xqmsg.msg(params.text, params.type);
+        }
+
+        // 3.弹出框组件
+        let confirmBtn = document.querySelector('.confirmBtn');
+        confirmBtn.addEventListener('click', confirmSet, false);
+        async function confirmSet () {  
+            let res = await xqmsg.confirm('你确定要离开我吗？');
+            console.log(res);
+            // {type: 1, msg: 'confirm'}
+            // {type: 2, msg: 'cancel'}
+        }
+    </script>
+</body>
+
+</html>
+                

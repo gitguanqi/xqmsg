@@ -1,0 +1,29 @@
+{
+"name": "xqmsg",
+"version": "0.0.1",
+"description": "This is a js show message tip plugin.",
+"main": "lib/js/xqmsg.js",
+"directories": {
+    "lib": "lib",
+    "test": "test"
+},
+"scripts": {
+    "test": "echo Error: no test specified && exit 1",
+    "test:browser": "live-server --port=4001 --host=localhost"
+},
+"repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitguanqi/xqmsg.git"
+},
+"keywords": [
+    "msg",
+    "xqmsg"
+],
+"author": "xqmsg",
+"license": "MIT",
+"bugs": {
+    "url": "https://github.com/gitguanqi/xqmsg/issues"
+},
+"homepage": "https://github.com/gitguanqi/xqmsg#readme"
+}          
+        
