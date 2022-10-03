@@ -1,6 +1,6 @@
 {
 "name": "xqmsg",
-"version": "0.0.1",
+"version": "0.0.2",
 "description": "This is a js show message tip plugin.",
 "main": "lib/js/xqmsg.js",
 "directories": {

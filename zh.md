@@ -11,11 +11,13 @@
 引入cdn
 
 ```html
-<!-- 游览器es5 -->
-<script src="https://unpkg.com/xqmsg/lib/xqmsg.min.js"></script>
-<!-- es6模块 -->
+<!-- 样式 -->
+<link rel="stylesheet" href="https://unpkg.com/xqmsg/lib/css/xqmsg.min.css">
+<!-- 游览器 -->
+<script src="https://unpkg.com/xqmsg/lib/js/xqmsg.min.js"></script>
+<!-- es模块 -->
 <script type="module">
-    import xqmsg from './lib/xqmsg-esm.min.js';
+    import xqmsg from '../lib/js/xqmsg-esm.min.js';
 </script>
 ```
 

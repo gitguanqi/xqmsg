@@ -11,11 +11,13 @@ This is a js show message tip plugin.
 import cdn
 
 ```html
+<!-- css style -->
+<link rel="stylesheet" href="https://unpkg.com/xqmsg/lib/css/xqmsg.min.css">
 <!-- Browser -->
-<script src="https://unpkg.com/xqmsg/lib/xqmsg.min.js"></script>
+<script src="https://unpkg.com/xqmsg/lib/js/xqmsg.min.js"></script>
 <!-- es module -->
 <script type="module">
-    import xqmsg from '../lib/xqmsg-esm.min.js';
+    import xqmsg from '../lib/js/xqmsg-esm.min.js';
 </script>
 ```
 
