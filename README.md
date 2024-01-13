@@ -12,9 +12,9 @@ import cdn
 
 ```html
 <!-- css style -->
-<link rel="stylesheet" href="https://unpkg.com/xqmsg/lib/css/xqmsg.min.css">
+<link rel="stylesheet" href="https://xqgj.cc/xqcdn/libs/xqmsg/css/xqmsg.min.css">
 <!-- Browser -->
-<script src="https://unpkg.com/xqmsg/lib/js/xqmsg.min.js"></script>
+<script src="https://xqgj.cc/xqcdn/libs/xqmsg/js/xqmsg.min.js"></script>
 <!-- es module -->
 <script type="module">
     import xqmsg from '../lib/js/xqmsg-esm.min.js';
@@ -89,7 +89,7 @@ async function confirmSet () {
 
 Run this script to view the demonstration case: `npm run test:browser`.
 
-+ [demo](https://unpkg.com/xqmsg/test/browser.html)
++ [demo](https://xqgj.cc/xqmsg/test/browser.html)
 
 ## ask questions
 

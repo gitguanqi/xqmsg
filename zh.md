@@ -12,9 +12,9 @@
 
 ```html
 <!-- 样式 -->
-<link rel="stylesheet" href="https://unpkg.com/xqmsg/lib/css/xqmsg.min.css">
+<link rel="stylesheet" href="https://xqgj.cc/xqcdn/libs/xqmsg/css/xqmsg.min.css">
 <!-- 游览器 -->
-<script src="https://unpkg.com/xqmsg/lib/js/xqmsg.min.js"></script>
+<script src="https://xqgj.cc/xqcdn/libs/xqmsg/js/xqmsg.min.js"></script>
 <!-- es模块 -->
 <script type="module">
     import xqmsg from '../lib/js/xqmsg-esm.min.js';
@@ -89,7 +89,7 @@ async function confirmSet () {
 
 运行这个脚本查看展示案例：`npm run test:browser`。
 
-+ [点击体验](https://unpkg.com/xqmsg/test/browser.html)
++ [点击体验](https://xqgj.cc/xqmsg/test/browser.html)
 
 ## 提问题
 
